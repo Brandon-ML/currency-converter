@@ -1,0 +1,90 @@
+body{
+    background-color: #363636;
+  }
+
+.container{
+  position: relative;
+  padding-top: 100px;
+}
+.currency-form {
+    max-width: 300px;
+    margin: auto;
+  }
+
+#amount, #toCurrency {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+.button:hover {
+    background-color: #0056b3;
+  }
+
+label {
+    color: white; 
+  }
+
+  h1{
+    padding-left:35px;
+  }
+
+.exchanges{
+  font-size: 20px;
+  color: white;
+  padding-top: 10px;
+  max-width: 300px;
+  margin: auto;
+  text-align: left;
+}
+  a{
+    padding-left: 30px;
+    color:#dfdfdf;
+  }
+
+  .flash{
+    font-size: 20px;
+    color: white;
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 0; /* Position at the top of the container */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+
+  .button1{
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 12px 20px;
+    cursor: pointer;
+  }
+
+  .button1:hover{
+    background-color: #0056b3;
+  }

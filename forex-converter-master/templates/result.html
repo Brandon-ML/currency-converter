@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Exchange Rates{% endblock %}
+
+{% block body %}
+    
+<div class="exchanges">
+    <h1>Exchange Rates</h1>
+    <ul>
+        <!--Loop over the quotes dictionary passed from the flask view, displaying each converted amount # -->
+        {% for key, converted_amount in quotes.items() %}
+        <!--li showing the conversion from USD to the target currency using the provided exchange rates. 'money_system' is used to get the symbol of the currency. 'key[3:]' trims the first three characters to get the currency code for display. -->
+            <li>$ {{ amount }} USD = {{ money_system[key[3:]] }} {{ converted_amount }} {{ key[3:] }}</li>
+        {% endfor %}
+        <a href="/" class="button1">Convert Another</a>
+    </ul>
+</div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Currency Converter{% endblock %}
+
+{% block body %}
+
+<body>
+
+<section class="conatiner">
+<form class="currency-form" action="/convert" method="post">
+
+   <label for="toCurrency">Convert USD to</label>
+   <input type="text" id="toCurrency" name="toCurrency">
+
+   <label for="amount">Amount</label>
+   <input type="number" id="amount" name="amount">
+
+   <input type="submit" class="button" value="Convert">
+</form>
+
+</section>
+{% endblock %}
+</body>
+</html>
